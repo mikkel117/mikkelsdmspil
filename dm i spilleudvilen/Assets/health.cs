@@ -19,7 +19,9 @@ public class health : MonoBehaviour {
 	{
 		if (inviRunning == false) {
 			Liv += change;
-			blood.BloodAndShake ();
+			if (blood != null) {
+				blood.BloodAndShake ();
+			}
 		}
 
 		if (Liv <= 0) {
