@@ -13,10 +13,13 @@ public class health : MonoBehaviour {
 
 	private bool inviRunning = false;
 
+	public BloodEffect blood;
+
 	public void ChangeHealth(int change)
 	{
 		if (inviRunning == false) {
 			Liv += change;
+			blood.BloodAndShake ();
 		}
 
 		if (Liv <= 0) {

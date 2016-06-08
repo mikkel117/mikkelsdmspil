@@ -5,7 +5,7 @@ public class BoxDetect : MonoBehaviour {
 
 
 	public Score scoreScript;
-	public float TimeReduce = 10;
+	public float TimeReduce = 5;
 
 	// Use this for initialization
 	void Start () {

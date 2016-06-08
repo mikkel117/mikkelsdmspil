@@ -27,5 +27,9 @@ public class killzone : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.R)) {
 			Application.LoadLevel (Application.loadedLevel);
 		}
+
+		if (Input.GetKeyDown (KeyCode.P)) {
+			Application.LoadLevel (0);
+		}
 	}
 }
